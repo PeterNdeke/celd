@@ -20,13 +20,12 @@
   
 			sort($A);	//Sorting A array in non-decreasing order 		
  
-			while ($currentTime <= X) {					//Iteration block starts here 
- 
- 				$currentTime += $A[$numberOfThings];	//Adding completion time of the selected to-do item to currentTime variable 
+			for ($currentTime = 0; $currentTime <= X; $currentTime++) { //iteration block starts here
+                           
+                                $currentTime += $A[$numberOfThings];	        //Adding completion time of the selected to-do item to currentTime variable 
   
- 				$numberOfThings++;						//Incrementing numberOfThings variable by one  
- 				 
- 			}											//Iteration block stops here 
+ 				$numberOfThings++;
+}								//Iteration block stops here 
  		 ?> 
             <span>The maximum number of tasks to be completed by the military unit, in limited time of  
                 <strong><?php echo X . " minutes"; ?></strong> is: </span><strong><?php echo $numberOfThings; ?> tasks</strong> 
